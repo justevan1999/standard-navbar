@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  --text-blue: #00a1ff;
+  --main-red: #950000;
+  --main-black: #232323;
+  --btn-blue: #00a1ff;
+
+  --lexend: "Lexend", sans-serif;
+
+  --font-sm: 14px;
+  --font-normal: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--lexend);
+  font-size: var(--font-normal);
+  color: inherit;
+}
+
+nav button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* body {
+  font-family: var(--lexend);
+} */
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.2rem 3rem;
+}
+
+nav .logos img:nth-child(2) {
+  display: none;
+}
+
+nav .logos img:nth-child(1) {
+  width: 187px;
+  height: 86px;
+}
+
+nav .bx-menu-alt-left {
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 15px;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--main-red);
+  text-underline-offset: 3px;
+}
+
+nav ul li a.hideee {
+    text-decoration: underline;
+    text-decoration-color: var(--main-red);
+    text-underline-offset: 3px;
+  }
+  
+
+nav .nav_btns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav .nav_btns button {
+  font-size: var(--font-sm);
+}
+
+nav .nav_btns button:nth-child(2) {
+  width: 200px;
+  height: 38px;
+  background-color: var(--main-red);
+  color: #fff;
+  border-radius: 3.5px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav .nav_btns button:nth-child(2):hover {
+  box-shadow: 0px 0px 5px 2px #80808069;
+}
+
+nav .nav_btns button:nth-child(1) {
+  width: 100px;
+  height: 38px;
+  color: var(--main-red);
+  transition: all 0.2s ease-in-out;
+}
+
+nav .sm_ul {
+  display: none;
+}
+
+/* NAV */
+
+/* MEDIA QUERY  */
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding: 1.8rem 25px;
+    position: relative;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav .nav_btns {
+    display: none;
+  }
+
+  nav .logos img:nth-child(2) {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+
+  nav .logos img:nth-child(1) {
+    display: none;
+  }
+
+  nav .bx-menu-alt-left {
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+  }
+
+  nav .sm_ul {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    gap: 0;
+    padding: 0;
+    top: 100%;
+    left: 25px;
+    width: 87vw;
+  }
+
+  nav .sm_ul.show_menu {
+    display: flex;
+  }
+
+  nav .sm_ul .nav_btns {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  nav .sm_ul ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  nav .sm_ul .nav_btns button {
+    font-size: 15px;
+  }
+
+  nav .sm_ul .nav_btns button:nth-child(1) {
+    height: 38px;
+    padding: 0;
+    color: var(--main-red);
+    transition: all 0.2s ease-in-out;
+    margin-left: -30px;
+  }
+}
+/* MEDIA QUERY  */
